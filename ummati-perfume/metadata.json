@@ -1,0 +1,6 @@
+{
+  "name": "Ummati Perfume",
+  "description": "Premium e-commerce platform for Ummati Perfume, showcasing luxury fragrances, authentic Bakhoor, elegant burners, and high-quality Islamic lifestyle accessories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

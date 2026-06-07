@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Redefining neutral shades with the luxury "Sophisticated Dark" jade-black tones */
+  --color-neutral-950: #050A08;
+  --color-neutral-900: #08120E;
+  --color-neutral-800: #0A1813;
+  --color-neutral-700: #10261E;
+  --color-neutral-600: #19362C;
+  --color-neutral-500: #294D41;
+  --color-neutral-400: #5D7A70;
+  
+  /* Custom gorgeous warm gold color scale based on the request's accent color: #C5A059 */
+  --color-gold-100: #f7f0e0;
+  --color-gold-200: #ecd9b4;
+  --color-gold-300: #dec18a;
+  --color-gold-400: #d2b274;
+  --color-gold-500: #C5A059;
+  --color-gold-600: #aa8443;
+  --color-gold-700: #8b682e;
+  --color-gold-800: #65491c;
+  --color-gold-900: #3f2d10;
+
+  --color-emerald-950: #050A08;
+  --color-emerald-900: #08120E;
+  --color-emerald-800: #0A1813;
+  --color-emerald-700: #064E3B;
+  --color-emerald-600: #0d5843;
+}
+
+@layer utilities {
+  /* Subtle Islamic pattern effect */
+  .bg-arabic-pattern {
+    background-image: radial-gradient(circle at 100% 150%, var(--color-gold-800) 24%, var(--color-emerald-950) 24%, var(--color-emerald-950) 28%, var(--color-gold-900) 28%, var(--color-gold-900) 36%, var(--color-emerald-950) 36%, var(--color-emerald-950) 40%, transparent 40%, transparent),
+      radial-gradient(circle at 0% 150%, var(--color-gold-800) 24%, var(--color-emerald-950) 24%, var(--color-emerald-950) 28%, var(--color-gold-900) 28%, var(--color-gold-900) 36%, var(--color-emerald-950) 36%, var(--color-emerald-950) 40%, transparent 40%, transparent),
+      radial-gradient(circle at 50% 100%, var(--color-gold-800) 10%, var(--color-emerald-950) 10%, var(--color-emerald-950) 14%, var(--color-gold-900) 14%, var(--color-gold-900) 18%, var(--color-emerald-950) 18%, var(--color-emerald-950) 22%, transparent 22%, transparent);
+    background-size: 80px 40px;
+    background-position: 0 0, 40px 0, 40px 0;
+  }
+
+  /* Sophisticated Luxury Gold Dotted Grid Overlay */
+  .bg-sophisticated-pattern {
+    background-image: radial-gradient(circle at 2px 2px, #C5A059 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+}
+
+/* Custom golden scrollbar for premium touch */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050A08;
+}
+::-webkit-scrollbar-thumb {
+  background: #aa8443;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+body {
+  background-color: #050A08;
+  color: #f1f5f9;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Elegant card golden borders and glow */
+.gold-card-shadow {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(197, 160, 89, 0.15);
+}
+
+.gold-text-glow {
+  text-shadow: 0 0 10px rgba(197, 160, 89, 0.35);
+}
+
